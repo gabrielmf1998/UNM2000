@@ -303,7 +303,7 @@ Start-Sleep 3
 #Vai instalar o UNM2000
 $ScriptPath = [System.Diagnostics.Process]::GetCurrentProcess().MainModule.FileName
 $ScriptDir = [System.IO.Path]::GetDirectoryName($ScriptPath)
-$installerUNM = Join-Path $ScriptDir ".\UNM 2000 - Files\UNM2000\unm2000-1.0-windows-installer-20220930-157490.exe"
+$installerUNM = Join-Path $ScriptDir ".\UNM 2000 - Files\UNM2000\unm2000.exe"
 Write-Host "Instalando UNM2000.exe..." -ForegroundColor Green
 Write-Host "Aguarde a instalação concluir do UNM2000!" -ForegroundColor Yellow
 Start-Process -FilePath $installerUNM -Verb RunAs -Wait
